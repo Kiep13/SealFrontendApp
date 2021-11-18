@@ -1,4 +1,5 @@
 import { ChangeDetectionStrategy, Component } from '@angular/core';
+import { Router } from "@angular/router";
 
 @Component({
   selector: 'sl-login',
@@ -7,4 +8,10 @@ import { ChangeDetectionStrategy, Component } from '@angular/core';
   changeDetection: ChangeDetectionStrategy.OnPush
 })
 export class LoginComponent  {
+  constructor(private router: Router) {
+  }
+
+  public navigateToMessages() {
+    this.router.navigate(['messages']);
+  }
 }

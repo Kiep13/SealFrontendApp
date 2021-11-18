@@ -1,21 +1,25 @@
 <section class='workspace-menu'>
   <section>
-    <tui-avatar class="tui-space_top-1" text="alex inkin" [rounded]="true"></tui-avatar>
+    <tui-avatar class='workspace-menu__avatar'
+                text='name surname'
+                size='l'
+                [rounded]='true'
+                [autoColor]='true'>
+    </tui-avatar>
   </section>
   <section>
     <tui-marker-icon
-      class="custom tui-space_left-1"
-      src="tuiIconMail"
+      src='tuiIconMail'
+      routerLink='/messages'
     ></tui-marker-icon>
     <tui-marker-icon
-      class="custom tui-space_left-1"
-      src="tuiIconUsers"
+      src='tuiIconUsers'
+      routerLink='/people'
     ></tui-marker-icon>
   </section>
   <section>
     <tui-marker-icon
-      class="tui-space_left-1"
-      src="tuiIconSettings"
+      src='tuiIconSettings'
     ></tui-marker-icon>
   </section>
 </section>

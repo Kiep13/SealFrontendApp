@@ -1,5 +1,6 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
+import { RouterModule } from '@angular/router';
 
 import { TuiAvatarModule, TuiMarkerIconModule } from '@taiga-ui/kit';
 
@@ -14,7 +15,8 @@ import { WorkspaceWrapperComponent } from './workspace-wrapper.component';
   imports: [
     CommonModule,
     TuiAvatarModule,
-    TuiMarkerIconModule
+    TuiMarkerIconModule,
+    RouterModule
   ],
   exports: [
     WorkspaceWrapperComponent

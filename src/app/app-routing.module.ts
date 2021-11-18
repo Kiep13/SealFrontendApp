@@ -12,6 +12,11 @@ const routes: Routes = [
       return import('./modules/routed/messages/messages.module').then(m => m.MessagesModule);
     }
   },
+  {
+    path: 'people', loadChildren: () => {
+      return import('./modules/routed/people/people.module').then(m => m.PeopleModule);
+    }
+  },
   {path: '**', redirectTo: '/login'}
 ];
 

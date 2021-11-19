@@ -1,10 +1,49 @@
+@import 'variables';
+
 .workspace-menu {
-  height: 100vh;
+  height: calc(100vh - 40px);
   width: 80px;
 
-  background: #ececec;
+  padding: 20px 0;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  border-right: 3px solid @blue;
 
   &__avatar {
     margin: auto;
+  }
+
+  &__container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    padding-left: 3px;
+
+    &:hover {
+      cursor: pointer;
+    }
+
+    &:first-child {
+      margin-bottom: 10px;
+    }
+  }
+
+  &__active {
+    padding-left: 0;
+
+    background: @blue50;
+    border-left: 3px solid @blue;
+  }
+
+  &__item {
+    width: auto;
+    margin: 0 auto;
+
+    background: inherit;
+    color: @blue;
   }
 }

@@ -35,6 +35,9 @@
                 "output": "assets/taiga-ui/icons"
               }
             ],
+            "stylePreprocessorOptions": {
+              "includePaths": ["src/assets/styles"]
+            },
             "styles": [
               "src/styles.less",
               "node_modules/@taiga-ui/core/styles/taiga-ui-global.less",

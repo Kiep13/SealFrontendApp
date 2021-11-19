@@ -1,25 +1,37 @@
 <section class='workspace-menu'>
-  <section>
+  <section class='workspace-menu__container'>
     <tui-avatar class='workspace-menu__avatar'
                 text='name surname'
-                size='l'
+                size='m'
                 [rounded]='true'
                 [autoColor]='true'>
     </tui-avatar>
   </section>
+
   <section>
-    <tui-marker-icon
-      src='tuiIconMail'
-      routerLink='/messages'
-    ></tui-marker-icon>
-    <tui-marker-icon
-      src='tuiIconUsers'
-      routerLink='/people'
-    ></tui-marker-icon>
+    <section class='workspace-menu__container' routerLink='/messages' routerLinkActive='workspace-menu__active'>
+      <tui-marker-icon
+        src='tuiIconMail'
+        size='m'
+        class='workspace-menu__item'
+      ></tui-marker-icon>
+    </section>
+
+    <section class='workspace-menu__container' routerLink='/people' routerLinkActive='workspace-menu__active'>
+      <tui-marker-icon
+        src='tuiIconUsers'
+        size='m'
+        class='workspace-menu__item'
+      ></tui-marker-icon>
+    </section>
   </section>
-  <section>
+
+
+  <section class='workspace-menu__container'>
     <tui-marker-icon
       src='tuiIconSettings'
+      size='m'
+      class='workspace-menu__item'
     ></tui-marker-icon>
   </section>
 </section>

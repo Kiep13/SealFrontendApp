@@ -1,0 +1,20 @@
+<tui-island size='l' class='chat-item'>
+  <div class='chat-item__image'>
+    <tui-avatar [avatarUrl]='chat.image'
+                [text]='chat.name'
+                [rounded]='true'
+                [autoColor]='true'
+                size='m'>
+    </tui-avatar>
+  </div>
+  <div class='chat-item__info'>
+    <div class='chat-item__title'>
+      <h3 class='tui-island__title chat-item__name'>{{ chat.name }}</h3>
+      <span class='chat-item__time'>{{ chat.lastPostDate | date: 'h:mm a'}}</span>
+    </div>
+    <div class='chat-item__content'>
+      <p class='tui-island__paragraph chat-item__message'>{{ chat.lastMessage }}</p>
+      <tui-badge status='primary' class='tui-space_right-2 chat-item__count' [value]='chat.unreadCount'></tui-badge>
+    </div>
+  </div>
+</tui-island>

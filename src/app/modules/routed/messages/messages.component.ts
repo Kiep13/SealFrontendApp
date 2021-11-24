@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { ChangeDetectionStrategy, Component, OnInit } from '@angular/core';
 import { Title } from '@angular/platform-browser';
 
 import { MESSAGES_PAGE_TITLE } from '@shared/contants';
@@ -6,9 +6,11 @@ import { MESSAGES_PAGE_TITLE } from '@shared/contants';
 @Component({
   selector: 'sl-messages',
   templateUrl: './messages.component.html',
-  styleUrls: ['./messages.component.less']
+  styleUrls: ['./messages.component.less'],
+  changeDetection: ChangeDetectionStrategy.OnPush
 })
 export class MessagesComponent implements OnInit {
+
   constructor(private titleService: Title) {
   }
 

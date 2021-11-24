@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { ChangeDetectionStrategy, Component, OnInit } from '@angular/core';
 import { Title } from '@angular/platform-browser';
 
 import { PEOPLE_PAGE_TITLE } from '@shared/contants';
@@ -6,7 +6,8 @@ import { PEOPLE_PAGE_TITLE } from '@shared/contants';
 @Component({
   selector: 'sl-people',
   templateUrl: './people.component.html',
-  styleUrls: ['./people.component.less']
+  styleUrls: ['./people.component.less'],
+  changeDetection: ChangeDetectionStrategy.OnPush
 })
 export class PeopleComponent implements OnInit {
   constructor(private titleService: Title) {

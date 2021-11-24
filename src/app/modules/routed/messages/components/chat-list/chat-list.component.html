@@ -1,5 +1,5 @@
 <section class='chat-list'>
-  <section>
-    <sl-search-form></sl-search-form>
-  </section>
+  <sl-search-form></sl-search-form>
+
+  <sl-chat-item *ngFor='let chat of chats; trackBy: trackById' [chat]='chat'></sl-chat-item>
 </section>

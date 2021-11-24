@@ -3,7 +3,17 @@
 
   align-items: flex-start;
 
-  section {
+  &__menu,
+  &__content {
     display: inline-flex;
+    height: 100%;
+  }
+
+  &__menu {
+    width: 70px;
+  }
+
+  &__content {
+    width: calc(100% - 70px);
   }
 }

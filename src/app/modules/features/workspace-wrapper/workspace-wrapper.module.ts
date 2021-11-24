@@ -1,7 +1,6 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { RouterModule } from '@angular/router';
-
 import { TuiAvatarModule, TuiMarkerIconModule } from '@taiga-ui/kit';
 
 import { WorkspaceMenuComponent } from './workspace-menu/workspace-menu.component';

@@ -1,0 +1,22 @@
+@import 'variables';
+
+.messages-page {
+  display: flex;
+  width: 100%;
+  height: 100%;
+
+  &__list,
+  &__messages {
+    height: 100%;
+    display: inline-flex;
+  }
+
+  &__list {
+    width: 20%;
+    border-right: 3px solid @blue;
+  }
+
+  &__chat {
+    width: calc(80% - 3px);
+  }
+}

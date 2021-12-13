@@ -1,7 +1,13 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { TuiSvgModule, TuiTextfieldControllerModule } from '@taiga-ui/core';
-import { TuiAvatarModule, TuiBadgeModule, TuiInputModule, TuiIslandModule } from '@taiga-ui/kit';
+import {
+  TuiAvatarModule,
+  TuiBadgedContentModule,
+  TuiBadgeModule,
+  TuiInputModule,
+  TuiIslandModule
+} from '@taiga-ui/kit';
 
 import { WorkspaceWrapperModule } from '@features/workspace-wrapper/workspace-wrapper.module';
 
@@ -22,6 +28,7 @@ import { ChatItemComponent } from './components/chat-item/chat-item.component';
     CommonModule,
     MessagesRoutingModule,
     WorkspaceWrapperModule,
+    TuiBadgedContentModule,
     TuiInputModule,
     TuiTextfieldControllerModule,
     TuiSvgModule,

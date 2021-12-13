@@ -5,7 +5,7 @@ export const CHATS_MOCK: IChat[] = [
     id: 1,
     name: 'Sherill Flynn',
     image: 'https://i.pinimg.com/originals/35/02/53/35025350e92015230afeadbbe98c0bb4.jpg',
-    lastMessage: 'I would like to try a cheesecake',
+    lastMessage: 'I would like to try a cheesecake. Can you buy me a raspberry one when you will go home? I would be very grateful to you.',
     lastPostDate: new Date(),
     unreadCount: 3
   },

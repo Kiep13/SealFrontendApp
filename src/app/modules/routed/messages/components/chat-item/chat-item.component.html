@@ -1,11 +1,17 @@
 <tui-island size='l' class='chat-item'>
   <div class='chat-item__image'>
-    <tui-avatar [avatarUrl]='chat.image'
-                [text]='chat.name'
-                [rounded]='true'
-                [autoColor]='true'
-                size='m'>
-    </tui-avatar>
+    <tui-badged-content
+      colorBottom='var(--tui-success-fill)'
+      size='m'
+      [rounded]="true"
+    >
+      <tui-avatar [avatarUrl]='chat.image'
+                  [text]='chat.name'
+                  [rounded]='true'
+                  [autoColor]='true'
+                  size='m'>
+      </tui-avatar>
+    </tui-badged-content>
   </div>
   <div class='chat-item__info'>
     <div class='chat-item__title'>
@@ -14,7 +20,7 @@
     </div>
     <div class='chat-item__content'>
       <p class='tui-island__paragraph chat-item__message'>{{ chat.lastMessage }}</p>
-      <tui-badge status='primary' class='tui-space_right-2 chat-item__count' [value]='chat.unreadCount'></tui-badge>
+      <tui-badge status='primary' class='tui-space_left-2 chat-item__count' [value]='chat.unreadCount'></tui-badge>
     </div>
   </div>
 </tui-island>

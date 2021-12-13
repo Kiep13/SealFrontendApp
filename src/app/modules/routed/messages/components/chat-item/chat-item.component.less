@@ -1,6 +1,7 @@
 .chat-item {
-  margin-top: 20px;
+  height: 50px;
   display: flex;
+  padding: 15px;
 
   &__image,
   &__name,
@@ -8,9 +9,18 @@
     display: inline-flex;
   }
 
+  &__image {
+    height: fit-content;
+  }
+
   &__info {
     padding-left: 10px;
     width: 100%;
+
+    display: block;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
   }
 
   &__title,
@@ -18,5 +28,15 @@
     display: flex;
     width: 100%;
     justify-content: space-between;
+    align-items: center;
+  }
+
+  &__name {
+    margin-bottom: 0;
+  }
+
+  &__message {
+    overflow: hidden;
+    text-overflow: ellipsis;
   }
 }

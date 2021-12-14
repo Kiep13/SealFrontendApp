@@ -2,6 +2,7 @@
   <section class='correspondence-header__chat-info'>
     <div class='correspondence-header__chat-image'>
       <tui-badged-content
+        *ngIf='chat.isOnline; else offline'
         colorBottom='var(--tui-success-fill)'
         size='m'
         [rounded]="true"
@@ -13,6 +14,14 @@
                     size='m'>
         </tui-avatar>
       </tui-badged-content>
+      <ng-template #offline>
+        <tui-avatar [avatarUrl]='chat.image'
+                    [text]='chat.name'
+                    [rounded]='true'
+                    [autoColor]='true'
+                    size='m'>
+        </tui-avatar>
+      </ng-template>
     </div>
     <div class='correspondence-header__chat-description'>
       <h3 class='correspondence-header__chat-name'>{{ chat.name }}</h3>

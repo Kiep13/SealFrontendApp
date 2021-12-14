@@ -1,0 +1,13 @@
+<section class='message-form'>
+  <tui-input
+    tuiTextfieldSize='m'
+    [tuiTextfieldLabelOutside]='true'
+    [tuiTextfieldCustomContent]='icon'
+  >
+    Write a message...
+  </tui-input>
+</section>
+
+<ng-template #icon>
+  <tui-svg class='tui-space_left-3' src='tuiIconMail'></tui-svg>
+</ng-template>

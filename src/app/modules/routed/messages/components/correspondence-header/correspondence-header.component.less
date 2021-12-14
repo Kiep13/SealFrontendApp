@@ -1,0 +1,40 @@
+@import 'variables';
+
+.correspondence-header {
+  height: 50px;
+  border-bottom: 3px solid @blue;
+  padding: 10px;
+
+  display: flex;
+  justify-content: center;
+  align-content: center;
+
+  &__chat-info {
+    display: flex;
+    gap: 10px;
+  }
+
+  &__chat-image,
+  &__chat-description {
+    display: inline-flex;
+  }
+
+  &__chat-description {
+    flex-direction: column;
+    vertical-align: top;
+  }
+
+  &__chat-name,
+  &__chat-status {
+    display: flex;
+    margin: 0;
+  }
+
+  &__chat-name {
+    font: var(--tui-font-heading-6);
+  }
+
+  &__chat-status {
+    font: var(--tui-font-text-m);
+  }
+}

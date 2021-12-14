@@ -16,13 +16,17 @@ import { SearchFormComponent } from './components/search-form/search-form.compon
 import { MessagesComponent } from './messages.component';
 import { MessagesRoutingModule } from './messages-routing.module';
 import { ChatItemComponent } from './components/chat-item/chat-item.component';
+import { CorrespondenceComponent } from './components/correspondence/correspondence.component';
+import { CorrespondenceHeaderComponent } from './components/correspondence-header/correspondence-header.component';
 
 @NgModule({
   declarations: [
     ChatListComponent,
     MessagesComponent,
     SearchFormComponent,
-    ChatItemComponent
+    ChatItemComponent,
+    CorrespondenceComponent,
+    CorrespondenceHeaderComponent
   ],
   imports: [
     CommonModule,

@@ -5,4 +5,5 @@ export interface IChat {
   lastMessage: string;
   lastPostDate: Date;
   unreadCount: number;
+  isOnline?: boolean;
 }

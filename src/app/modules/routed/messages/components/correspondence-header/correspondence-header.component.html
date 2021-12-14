@@ -1,0 +1,22 @@
+<section class='correspondence-header'>
+  <section class='correspondence-header__chat-info'>
+    <div class='correspondence-header__chat-image'>
+      <tui-badged-content
+        colorBottom='var(--tui-success-fill)'
+        size='m'
+        [rounded]="true"
+      >
+        <tui-avatar [avatarUrl]='chat.image'
+                    [text]='chat.name'
+                    [rounded]='true'
+                    [autoColor]='true'
+                    size='m'>
+        </tui-avatar>
+      </tui-badged-content>
+    </div>
+    <div class='correspondence-header__chat-description'>
+      <h3 class='correspondence-header__chat-name'>{{ chat.name }}</h3>
+      <p class='correspondence-header__chat-status'>Online</p>
+    </div>
+  </section>
+</section>

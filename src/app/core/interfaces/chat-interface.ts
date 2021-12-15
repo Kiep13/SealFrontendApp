@@ -1,7 +1,7 @@
 export interface IChat {
   id: number;
   name: string;
-  image?: string;
+  imageUrl?: string;
   lastMessage: string;
   lastPostDate: Date;
   unreadCount: number;

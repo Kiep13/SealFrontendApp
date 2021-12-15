@@ -6,7 +6,7 @@
       size='m'
       [rounded]="true"
     >
-      <tui-avatar [avatarUrl]='chat.image'
+      <tui-avatar [avatarUrl]='chat.imageUrl'
                   [text]='chat.name'
                   [rounded]='true'
                   [autoColor]='true'
@@ -14,7 +14,7 @@
       </tui-avatar>
     </tui-badged-content>
     <ng-template #offline>
-      <tui-avatar [avatarUrl]='chat.image'
+      <tui-avatar [avatarUrl]='chat.imageUrl'
                   [text]='chat.name'
                   [rounded]='true'
                   [autoColor]='true'

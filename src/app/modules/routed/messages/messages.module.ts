@@ -17,6 +17,7 @@ import { CorrespondenceComponent } from './components/correspondence/corresponde
 import { CorrespondenceHeaderComponent } from './components/correspondence-header/correspondence-header.component';
 import { MessageFormComponent } from './components/message-form/message-form.component';
 import { SearchFormComponent } from './components/search-form/search-form.component';
+import { MessageComponent } from './components/message/message.component';
 import { MessagesComponent } from './messages.component';
 import { MessagesRoutingModule } from './messages-routing.module';
 
@@ -27,6 +28,7 @@ import { MessagesRoutingModule } from './messages-routing.module';
     CorrespondenceComponent,
     CorrespondenceHeaderComponent,
     MessageFormComponent,
+    MessageComponent,
     MessagesComponent,
     SearchFormComponent,
   ],

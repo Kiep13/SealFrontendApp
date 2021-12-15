@@ -1,19 +1,14 @@
-<section class='message-container'>
+<section class='message'>
   <div class='message-sender'>
-
+    <tui-avatar [avatarUrl]='message.sender.imageUrl'
+                [text]='message.sender.name'
+                [rounded]='true'
+                [autoColor]='true'
+                size='m'>
+    </tui-avatar>
   </div>
-  <div class='message-box'>
-    <tui-island>
-      <p class="tui-island__category">category</p>
-      <h3 class="tui-island__title">Some heading</h3>
-      <p class="tui-island__paragraph">
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-        do eiusmod tempor incididunt ut labore et dolore magna
-        aliqua.
-      </p>
-      <p class="tui-island__paragraph tui-island__paragraph_link">
-        <a href="/" tuiLink>Link</a>
-      </p>
-    </tui-island>
-  </div>
+  <tui-island class='message__container'>
+    <p class='tui-island__paragraph'>{{ message.text }}</p>
+    <span class='message__post-date'>{{ message.postDate | date: 'h:mm a'}}</span>
+  </tui-island>
 </section>

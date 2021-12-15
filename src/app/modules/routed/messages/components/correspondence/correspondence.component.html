@@ -2,9 +2,11 @@
   <section class='correspondence__header'>
     <sl-correspondence-header></sl-correspondence-header>
   </section>
-  <section class='correspondence__messages'>
 
+  <section class='correspondence__messages'>
+    <sl-message *ngFor='let message of messages; trackBy: trackById' [message]='message'></sl-message>
   </section>
+
   <section class='correspondence__form'>
     <sl-message-form></sl-message-form>
   </section>

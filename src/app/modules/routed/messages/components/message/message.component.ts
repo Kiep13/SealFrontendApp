@@ -1,4 +1,6 @@
-import { ChangeDetectionStrategy, Component } from '@angular/core';
+import { ChangeDetectionStrategy, Component, Input } from '@angular/core';
+
+import { IMessage } from '@core/interfaces';
 
 @Component({
   selector: 'sl-message',
@@ -7,4 +9,5 @@ import { ChangeDetectionStrategy, Component } from '@angular/core';
   changeDetection: ChangeDetectionStrategy.OnPush
 })
 export class MessageComponent {
+  @Input() message: IMessage;
 }

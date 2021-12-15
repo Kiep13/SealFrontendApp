@@ -1,5 +1,6 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
+import { ReactiveFormsModule } from '@angular/forms';
 import { TuiSvgModule, TuiTextfieldControllerModule } from '@taiga-ui/core';
 import {
   TuiAvatarModule,
@@ -35,7 +36,7 @@ import { MessagesRoutingModule } from './messages-routing.module';
   imports: [
     CommonModule,
     MessagesRoutingModule,
-    WorkspaceWrapperModule,
+    ReactiveFormsModule,
     TuiBadgedContentModule,
     TuiInputModule,
     TuiTextfieldControllerModule,
@@ -43,6 +44,7 @@ import { MessagesRoutingModule } from './messages-routing.module';
     TuiIslandModule,
     TuiAvatarModule,
     TuiBadgeModule,
+    WorkspaceWrapperModule,
   ]
 })
 export class MessagesModule { }

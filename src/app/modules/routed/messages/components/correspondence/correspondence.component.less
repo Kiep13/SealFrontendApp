@@ -1,4 +1,5 @@
 @import 'variables';
+@import 'scroll';
 
 .correspondence {
   height: 100%;
@@ -8,10 +9,12 @@
   &__messages {
     flex-grow: 10;
     flex-basis: 0;
-    overflow-y: scroll;
 
-    flex-direction: column;
-    justify-content: flex-end;
+    display: flex;
+    height: 100%;
+    overflow-y: auto;
+
+    flex-direction: column-reverse;
 
     background-color: @light-blue;
     background-image: linear-gradient(315deg, @light-blue 0%, @blue 74%);

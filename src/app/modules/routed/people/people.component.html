@@ -1,3 +1,13 @@
 <sl-workspace-wrapper>
-  Here will be people search
+  <section class='people-page'>
+    <section class='people-page__search-form'>
+      <sl-search-form></sl-search-form>
+    </section>
+    <section class='people-page__search-results'>
+      <sl-person-card class='people-page__search-result'
+                      *ngFor='let user of users; trackBy: trackById'
+                      [user]='user'>
+      </sl-person-card>
+    </section>
+  </section>
 </sl-workspace-wrapper>

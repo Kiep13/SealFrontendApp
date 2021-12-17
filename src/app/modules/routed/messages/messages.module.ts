@@ -10,6 +10,7 @@ import {
   TuiIslandModule
 } from '@taiga-ui/kit';
 
+import { SearchFormModule } from '@features/search-form/search-form.module';
 import { WorkspaceWrapperModule } from '@features/workspace-wrapper/workspace-wrapper.module';
 
 import { ChatListComponent } from './components/chat-list/chat-list.component';
@@ -17,7 +18,6 @@ import { ChatItemComponent } from './components/chat-item/chat-item.component';
 import { CorrespondenceComponent } from './components/correspondence/correspondence.component';
 import { CorrespondenceHeaderComponent } from './components/correspondence-header/correspondence-header.component';
 import { MessageFormComponent } from './components/message-form/message-form.component';
-import { SearchFormComponent } from './components/search-form/search-form.component';
 import { MessageComponent } from './components/message/message.component';
 import { MessagesComponent } from './messages.component';
 import { MessagesRoutingModule } from './messages-routing.module';
@@ -31,12 +31,12 @@ import { MessagesRoutingModule } from './messages-routing.module';
     MessageFormComponent,
     MessageComponent,
     MessagesComponent,
-    SearchFormComponent,
   ],
   imports: [
     CommonModule,
     MessagesRoutingModule,
     ReactiveFormsModule,
+    SearchFormModule,
     TuiBadgedContentModule,
     TuiInputModule,
     TuiTextfieldControllerModule,

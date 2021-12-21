@@ -1,0 +1,21 @@
+<tui-badged-content
+  *ngIf='item.isOnline; else offline'
+  colorBottom='var(--tui-success-fill)'
+  [size]='size'
+  [rounded]='true'
+>
+  <tui-avatar [avatarUrl]='item.imageUrl'
+              [text]='item.name'
+              [rounded]='true'
+              [autoColor]='true'
+              size='m'>
+  </tui-avatar>
+</tui-badged-content>
+<ng-template #offline>
+  <tui-avatar [avatarUrl]='item.imageUrl'
+              [text]='item.name'
+              [rounded]='true'
+              [autoColor]='true'
+              size='m'>
+  </tui-avatar>
+</ng-template>

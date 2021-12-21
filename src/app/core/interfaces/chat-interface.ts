@@ -1,9 +1,9 @@
-export interface IChat {
+import { IAvatar } from './avatar-interface';
+
+export interface IChat extends IAvatar {
   id: number;
   name: string;
-  imageUrl?: string;
   lastMessage: string;
   lastPostDate: Date;
   unreadCount: number;
-  isOnline?: boolean;
 }

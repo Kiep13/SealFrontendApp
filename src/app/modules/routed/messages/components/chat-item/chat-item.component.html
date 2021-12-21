@@ -1,26 +1,6 @@
 <tui-island size='l' class='chat-item'>
   <div class='chat-item__image'>
-    <tui-badged-content
-      *ngIf='chat.isOnline; else offline'
-      colorBottom='var(--tui-success-fill)'
-      size='m'
-      [rounded]="true"
-    >
-      <tui-avatar [avatarUrl]='chat.imageUrl'
-                  [text]='chat.name'
-                  [rounded]='true'
-                  [autoColor]='true'
-                  size='m'>
-      </tui-avatar>
-    </tui-badged-content>
-    <ng-template #offline>
-      <tui-avatar [avatarUrl]='chat.imageUrl'
-                  [text]='chat.name'
-                  [rounded]='true'
-                  [autoColor]='true'
-                  size='m'>
-      </tui-avatar>
-    </ng-template>
+    <sl-badged-avatar [item]='chat'></sl-badged-avatar>
   </div>
   <div class='chat-item__info'>
     <div class='chat-item__title'>

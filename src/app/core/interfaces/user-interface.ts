@@ -1,8 +1,8 @@
-export interface IUser {
+import { IAvatar } from './avatar-interface';
+
+export interface IUser extends IAvatar {
   id: number,
   name: string,
   surname: string,
-  isOnline: boolean,
-  imageUrl? : string,
   lastSeen? : Date
 }

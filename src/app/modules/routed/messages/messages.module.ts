@@ -10,6 +10,7 @@ import {
   TuiIslandModule
 } from '@taiga-ui/kit';
 
+import { BadgedAvatarModule } from '@features/badged-avatar/badged-avatar.module';
 import { SearchFormModule } from '@features/search-form/search-form.module';
 import { WorkspaceWrapperModule } from '@features/workspace-wrapper/workspace-wrapper.module';
 
@@ -33,6 +34,7 @@ import { MessagesRoutingModule } from './messages-routing.module';
     MessagesComponent,
   ],
   imports: [
+    BadgedAvatarModule,
     CommonModule,
     MessagesRoutingModule,
     ReactiveFormsModule,

@@ -1,26 +1,6 @@
 <tui-island size='l' class='person-card'>
   <div class='person-card__image'>
-    <tui-badged-content
-      *ngIf='user.isOnline; else offline'
-      colorBottom='var(--tui-success-fill)'
-      size='m'
-      [rounded]="true"
-    >
-      <tui-avatar [avatarUrl]='user.imageUrl'
-                  [text]='user.name'
-                  [rounded]='true'
-                  [autoColor]='true'
-                  size='m'>
-      </tui-avatar>
-    </tui-badged-content>
-    <ng-template #offline>
-      <tui-avatar [avatarUrl]='user.imageUrl'
-                  [text]='user.name'
-                  [rounded]='true'
-                  [autoColor]='true'
-                  size='m'>
-      </tui-avatar>
-    </ng-template>
+    <sl-badged-avatar [item]='user'></sl-badged-avatar>
   </div>
   <div class='person-card__info'>
     <div class='person-card__title'>

@@ -1,5 +1,6 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
+import { TuiAvatarModule, TuiBadgedContentModule, TuiIslandModule } from '@taiga-ui/kit';
 
 import { SearchFormModule } from '@features/search-form/search-form.module';
 import { WorkspaceWrapperModule } from '@features/workspace-wrapper/workspace-wrapper.module';
@@ -17,6 +18,9 @@ import { PeopleRoutingModule } from './people-routing.module';
     CommonModule,
     PeopleRoutingModule,
     SearchFormModule,
+    TuiIslandModule,
+    TuiBadgedContentModule,
+    TuiAvatarModule,
     WorkspaceWrapperModule
   ]
 })

@@ -9,4 +9,8 @@ import { IUser } from '@core/interfaces';
 })
 export class PersonCardComponent {
   @Input() public user: IUser;
+
+  public get fullName(): string {
+    return `${this.user.name} ${this.user.surname}`;
+  }
 }

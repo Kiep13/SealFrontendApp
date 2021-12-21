@@ -3,5 +3,6 @@ export interface IUser {
   name: string,
   surname: string,
   isOnline: boolean,
-  imageUrl? : string
+  imageUrl? : string,
+  lastSeen? : Date
 }

@@ -4,7 +4,7 @@
   </section>
 
   <section class='correspondence__messages'>
-    <sl-message *ngFor='let message of messages; trackBy: trackById' [message]='message'></sl-message>
+    <sl-message *ngFor='let message of messages.reverse(); trackBy: trackById' [message]='message'></sl-message>
   </section>
 
   <section class='correspondence__form'>

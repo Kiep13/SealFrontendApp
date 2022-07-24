@@ -1,5 +1,5 @@
 import { ChangeDetectionStrategy, Component } from '@angular/core';
-import { FormControl } from '@angular/forms';
+import { UntypedFormControl } from '@angular/forms';
 
 @Component({
   selector: 'sl-search-form',
@@ -8,5 +8,5 @@ import { FormControl } from '@angular/forms';
   changeDetection: ChangeDetectionStrategy.OnPush
 })
 export class SearchFormComponent {
-  public searchControl: FormControl = new FormControl('');
+  public searchControl: UntypedFormControl = new UntypedFormControl('');
 }
